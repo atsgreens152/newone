@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="zxx" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ATS Picturesque Reprieves</title>
+
+    <link href="assets/images/logo/logo.png" rel="icon">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/fonts/font.css">
+
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/switch_color.css">
+
+    <link rel="stylesheet" href="assets/css/media-query.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
+
+    <style>
+        .iti {
+            width: 100%;
+        }
+    </style>
+
+    <style>
+        @keyframes popUp {
+            0% {
+                opacity: 1;
+                transform: scale(0.8);
+            }
+
+            15% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            35% {
+                opacity: 1;
+                transform: scale(0.8);
+            }
+
+            55% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            75% {
+                opacity: 1;
+                transform: scale(0.8);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .pop-up {
+            animation: popUp 5s ease-in-out infinite;
+        }
+
+        /* Staggered effect for multiple elements */
+        .pop-up:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .pop-up:nth-child(2) {
+            animation-delay: 1s;
+        }
+    </style>
+
+</head>
+
+<body class="">
+
+    <div id="wrap">
+
+        <!-- Header starts -->
+        <!-- sticky-top -->
+
+        <header class="site_header sticky-top bg-white">
+            <div class="container ">
+                <div class="logo">
+                    <img src="assets/images/logo/logo.png">
+                </div>
+
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav dp-none">
+                            <li class="nav-item active dropdown">
+                                <a class="nav-link dropdown-toggle" aria-current="page" href="#home_section"
+                                    id="navbarDropdownMenuLink">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about_section">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#price_section">Price</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Plan_section">Floor Plan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Amenities_section">Amenities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Gallery_section">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Location_section">Location</a>
+                            </li>
+                        </ul>
+
+
+
+                        <a class="btn " data-bs-toggle="modal" href="#exampleModalToggle" role="button">Book a site
+                            visit</a>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="mobile_sidebar_nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#home_section">home</a><i
+                                            class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about_section">about</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#property_listing_section">price</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#category_section">Floor plan</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#testimonial_section">Amenities</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#agent_section">Gallery</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#estimate_section">Location</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0);">add listing</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div style="text-align: center;">
+                            <img src="assets/images/logo/logo.png">
+                            <p>Authorized Channel Partner</p>
+                        </div>
+
+                        <form id="contact-form" onsubmit="submitForm(event)">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="mobile" class="form-label">Mobile</label>
+                                <input type="tel" class="form-control" id="mobile" name="mobile" minlength="10"
+                                    maxlength="10" pattern="\d{10}" required
+                                    oninvalid="this.setCustomValidity('Please enter exactly 10 digits')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Header ends -->
+
+        <!-- About section start -->
+
+        <section id="home_section">
+
+            <div class="bg_img_about">
+
+                <div class="container">
+
+                    <div class="col-md-5 col-12 about_house_info" style="text-align: center; background-color: white;">
+                        <div class="">
+                            <h4 style="color: #f5811d; margin-top: 40px;">LIMITED INVENTRIES</h4>
+                        </div>
+                        <div class="heading_about">
+                            <h3 style="color: black;">ATS Picturesque Reprieves</h3>
+                            <h4 style="color: black; margin-top: 10px; margin-bottom: 20px;">At Sector 152, Noida</h4>
+                        </div>
+                        <div class="" style="background-color: rgb(218, 217, 217); padding: 10px;">
+                            <p style="color: black;">Semi Furnished Homes with : AC, Modular Kitchen, Bathroom Fittings,
+                                5 KVA Power Backup, 2 Covered Car Parking</p>
+                        </div>
+                        <br>
+                        <div class="pop-up p-1 text-black shadow mt-2" style="background-color: #ffffff;">
+                            <h4 style=""><img src="./assets/images/logo/hdfc.png" style="width: 70px;"><strong
+                                    class="text-black">Approved
+                                    By HDFC Bank</strong></h4>
+                        </div><br>
+                        <div class="pop-up p-3 text-white" style="background-color: #f5811d;">
+                            <p style="color: white;">Premium Craftsmanship of Internal <br />Specifications</p>
+                        </div>
+                        <div class="pop-up p-3 text-white mt-2" style="background-color: #f5811d;">
+                            <p style="color: white;">Advanced Security & CCTV Surveillance.</p>
+                        </div>
+
+                        <div class="para_about">
+                            <p style="color: black;">Luxurious 3 & 4 BHK Apartments
+                                Starting Price</p>
+                        </div>
+
+                        <div class="para_about">
+                            <h3 style="color: #f5811d;">₹ 2.4 Cr* Onwards</h3>
+                        </div>
+                        <br />
+                        <div class="about_button">
+                            <a class="btn " data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire
+                                now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section ends -->
+
+        <!-- Property listing section starts-->
+
+        <section style="margin-top: 40px;" id="about_section">
+            <div class="" style="text-align: justify; padding: 20px; ">
+                <h2 style="color: #f5811d;">ATS Picturesque Reprieves</h2>
+                <h2> A Serene Paradise in Sector 152, Noida</h2>
+                <br />
+                <p>Nestled in the vibrant heart of Sector 152, Noida, ATS Picturesque Reprieves is a masterpiece
+                    of luxury and tranquility. Designed to offer an exquisite lifestyle, this residential haven
+                    blends Spanish architectural elegance with modern sophistication.</p>
+
+                <br />
+
+                <p>Spread across lush #f5811d landscapes, the project features spacious 3 & 4 BHK apartments
+                    with thoughtfully designed interiors, ensuring comfort and opulence at every step. The
+                    residences boast expansive balconies, panoramic views, and premium finishes that create
+                    an ambiance of refined living.</p>
+
+                <br />
+
+                <p>With world-class amenities, including a grand clubhouse, swimming pools, landscaped
+                    gardens, sports facilities, and dedicated leisure spaces, ATS Picturesque Reprieves
+                    caters to every aspect of a fulfilling life. Strategically located, it enjoys
+                    excellent connectivity to major expressways, educational institutions, healthcare
+                    centers, and entertainment hubs, making it a perfect blend of convenience and
+                    serenity.</p>
+
+                <br />
+
+                <p>Experience a lifestyle where luxury meets nature at ATS Picturesque Reprieves
+                    – your dream home in Noida’s most sought-after address.</p>
+
+                <br />
+            </div>
+        </section>
+
+        <!-- Property listing section ends-->
+
+        <!-- Price section starts-->
+
+        <section id="price_section" class="mt-100">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-9 col-md-8 col-12">
+                        <div class="theme_heading">
+                            <h2>Price List</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 theme_button">
+
+                        <a class="btn " data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row pt-3">
+
+                    <div class="col-12 col-md my-2">
+                        <div class="property card p-3">
+                            <div class="property-image"><img src="assets/images/property-listing/property-1.webp"
+                                    alt="property_image">
+                                <p class="property-price" style="width: 150px;">price of req.</p>
+                            </div>
+                            <h3 class="property-title">3 BHK</h3>
+                            <div class="facilities">
+                                <p class="area-facility value">Area: <span>1850 Sq. ft.</span></p>
+                            </div>
+                            <br />
+
+                            <a class="btn " style="
+                          bottom: 0; 
+                          left: 0; 
+                          width: 100%; 
+                          padding: 10px; 
+                          background: #f5811d; 
+                          color: white; 
+                          border: none; 
+                          cursor: pointer; 
+                          font-size: 20px; 
+                          z-index: 1;" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md my-2">
+
+                        <div class="property card p-3">
+                            <div class="property-image"><img src="assets/images/property-listing/property-1.webp"
+                                    alt="property_image">
+                                <p class="property-price" style="width: 150px;">price of req.</p>
+                            </div>
+                            <h3 class="property-title">3 BHK+S.R</h3>
+                            <div class="facilities">
+                                <p class="area-facility value">Area: <span>2350 Sq. ft.</span></p>
+                            </div>
+                            <br>
+
+                            <a class="btn " style="
+                          bottom: 0; 
+                          left: 0; 
+                          width: 100%; 
+                          padding: 10px; 
+                          background: #f5811d; 
+                          color: white; 
+                          border: none; 
+                          cursor: pointer; 
+                          font-size: 20px; 
+                          z-index: 1;" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md my-2">
+
+                        <div class="property card p-3">
+                            <div class="property-image"><img src="assets/images/property-listing/property-1.webp"
+                                    alt="property_image">
+                                <p class="property-price" style="width: 150px;">price of req.</p>
+                            </div>
+                            <h3 class="property-title">4 BHK+S.R</h3>
+                            <div class="facilities">
+                                <p class="area-facility value">Area: <span>3200 Sq. ft.</span></p>
+                            </div>
+                            <br>
+                            <a class="btn " style="
+                          bottom: 0; 
+                          left: 0; 
+                          width: 100%; 
+                          padding: 10px; 
+                          background: #f5811d; 
+                          color: white; 
+                          border: none; 
+                          cursor: pointer; 
+                          font-size: 20px; 
+                          z-index: 1;" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Price section ends-->
+
+
+        <!-- flor plan section starts-->
+
+        <section id="price_section" class="mt-100">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-9 col-md-8 col-12">
+                        <div class="theme_heading">
+                            <h2>Floor Plan</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 theme_button">
+
+                        <a class="btn " data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
+                    </div>
+                </div>
+
+                <div class="property row mt-3">
+
+                    <div class="col-12 col-md-4 my-2">
+
+                        <div class="property card p-3">
+                            <div class="property-image">
+                                <img src="assets/images/agents/agent-1.png" style="width: 100%; height: 300px; 
+                                        box-shadow: 25px 25px 25px 25px rgba(1, 1, 1, 1); 
+                                        filter: blur(2px);" alt="property_image">
+                            </div>
+
+
+                            <a class="btn " style="
+                          width: 100%; 
+                          border-radius: 0px;
+                          padding: 10px; 
+                          background: #f5811d; 
+                          color: white; 
+                          border: none; 
+                          cursor: pointer; 
+                          font-size: 20px; 
+                          z-index: 1;" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 my-2">
+                        <div class="property card p-3">
+                            <div class="property-image">
+                                <img src="assets/images/agents/agent-2.png" style="width: 100%;
+                            height: 300px;
+                            box-shadow: 25px 25px 25px 25px rgba(1, 1, 1, 1); 
+                            filter: blur(2px);" alt="property_image">
+                            </div>
+
+                            <a class="btn" style="
+                                width: 100%; 
+                                border-radius: 0px;
+                                text-align: center;
+                                padding: 10px; 
+                                background: #f5811d; 
+                                color: white; 
+                                border: none; 
+                                cursor: pointer; 
+                                font-size: 20px; 
+                                z-index: 1;" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire
+                                now</a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-4 my-2">
+                        <div class="property card p-3">
+                            <div class="property-image">
+                                <img src="assets/images/agents/agent-3.png" style="width: 100%;
+                            height: 300px;
+                            box-shadow: 25px 25px 25px 25px rgba(1, 1, 1, 1); 
+                            filter: blur(2px);" alt="property_image">
+                            </div>
+                            <a class="btn " style="
+                          width: 100%; 
+                          border-radius: 0px;
+                          padding: 10px; 
+                          background: #f5811d; 
+                          color: white; 
+                          border: none; 
+                          cursor: pointer; 
+                          font-size: 20px; 
+                          z-index: 1;" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- flor plan section ends-->
+
+        <!-- master plan section starts-->
+
+        <section id="price_section" class="mt-100">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-9 col-md-8 col-12">
+                        <div class="theme_heading">
+                            <h2>Master Plan</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 theme_button">
+
+                        <a class="btn " data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
+                    </div>
+                </div>
+
+                <div class=" pt-80">
+
+                    <div class="card col-12 shadow">
+                        <div class="property-image"><img style="width: 100%; height: 600px; filter: blur(1px);"
+                                src="assets/images/agents/agent-4.png" alt="property_image">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- master plan section ends-->
+
+        <!-- Amenities section starts-->
+
+        <section id="Amenities_section" class="mt-100">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-9 col-md-8 col-12">
+                        <div class="theme_heading">
+                            <h2>Amenities</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-12 theme_button">
+                        <a class="btn " data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
+                    </div>
+                </div>
+
+                <div class="row category_inner_section">
+
+                    <div class="col-md-3 col-6 category_column">
+                        <div class="real_estate_categories">
+                            <div class="category_items">
+                                <a class="category_items_link" href="javascript:void(0);">
+                                    <div class="p_category_image"
+                                        style="background-image: url('assets/images/categories/category-1.jpg');">
+                                    </div>
+                                    <h4 class="category_title">Swimming pool</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6 category_column">
+                        <div class="real_estate_categories">
+                            <div class="category_items">
+                                <a class="category_items_link" href="javascript:void(0);">
+                                    <div class="p_category_image"
+                                        style="background-image: url('assets/images/categories/category-2.jpg');">
+                                    </div>
+                                    <h4 class="category_title">Clubhouse</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6 category_column">
+                        <div class="real_estate_categories">
+                            <div class="category_items">
+                                <a class="category_items_link" href="javascript:void(0);">
+                                    <div class="p_category_image"
+                                        style="background-image: url('assets/images/categories/category-3.png');">
+                                    </div>
+                                    <h4 class="category_title">Indoor Gymnasium</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6 category_column">
+                        <div class="real_estate_categories">
+                            <div class="category_items">
+                                <a class="category_items_link" href="javascript:void(0);">
+                                    <div class="p_category_image"
+                                        style="background-image: url('assets/images/categories/category-4.png');">
+                                    </div>
+                                    <h4 class="category_title">Billiards Room</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6 category_column">
+                        <div class="real_estate_categories">
+                            <div class="category_items">
+                                <a class="category_items_link" href="javascript:void(0);">
+                                    <div class="p_category_image"
+                                        style="background-image: url('assets/images/categories/category-5.jpg');">
+                                    </div>
+                                    <h4 class="category_title">Tennis Court</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6 category_column">
+                        <div class="real_estate_categories">
+                            <div class="category_items">
+                                <a class="category_items_link" href="javascript:void(0);">
+                                    <div class="p_category_image"
+                                        style="background-image: url('assets/images/categories/category-6.png');">
+                                    </div>
+                                    <h4 class="category_title">Basketball Court</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6 category_column">
+                        <div class="real_estate_categories">
+                            <div class="category_items">
+                                <a class="category_items_link" href="javascript:void(0);">
+                                    <div class="p_category_image"
+                                        style="background-image: url('assets/images/categories/category-7.jpg');">
+                                    </div>
+                                    <h4 class="category_title">Cricket Pitch</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6 category_column">
+                        <div class="real_estate_categories">
+                            <div class="category_items">
+                                <a class="category_items_link" href="javascript:void(0);">
+                                    <div class="p_category_image"
+                                        style="background-image: url('assets/images/categories/category-8.png');">
+                                    </div>
+                                    <h4 class="category_title">Multi-purpose Hall</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amenities section ends-->
+
+
+
+
+
+
+
+        <!-- Gallery section starts-->
+
+        <section id="Gallery_section" class="">
+
+            <div class="bg_img_testimonial">
+
+                <div class="container">
+
+                    <div class="theme_heading">
+                        <h2>ATS Gallery</h2>
+                    </div>
+
+                    <div class="testimonial_inner_section">
+                        <div class="client_testimonials">
+                            <div class="p_category_image" style="background-image: url('assets/images/gallery/1.jpg');">
+                            </div>
+                        </div>
+
+                        <div class="client_testimonials">
+                            <div class="p_category_image" style="background-image: url('assets/images/gallery/2.jpg');">
+                            </div>
+                        </div>
+
+                        <div class="client_testimonials">
+                            <div class="p_category_image" style="background-image: url('assets/images/gallery/3.jpg');">
+                            </div>
+                        </div>
+
+                        <div class="client_testimonials">
+                            <div class="p_category_image" style="background-image: url('assets/images/gallery/4.jpg');">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery section ends-->
+
+
+
+        <!-- Developer section starts-->
+
+        <section id="" class="">
+
+            <div class="bg_img_buyer_seller">
+
+                <div class="container">
+
+                    <div class="row buyer_seller_top_inner_section" style="justify-content: center;">
+                        <div class="col-8 left_column ">
+                            <center> <img class="img_shadow shadow" src="assets/images/house-images/house-1.png"
+                                    style="width: 100%; height: auto;" alt="house-image">
+                            </center>
+                        </div>
+
+                        <div class="col-12 right_column mt-5">
+
+                            <div class="buyer_seller_heading" style="text-align: center;">
+                                <h2 class="my-3">about Developer</h2>
+                            </div>
+                            <div style="text-align: justify ;">
+                                <p>TS Infrastructure Ltd. – Crafting Excellence in Noida's Skyline
+                                    ATS Infrastructure Ltd. is a renowned real estate developer known for its commitment
+                                    to
+                                    quality, architectural brilliance, and customer satisfaction. Founded in 1998, ATS
+                                    has
+                                    redefined luxury living with meticulously designed residential and commercial
+                                    projects
+                                    across Noida, Greater Noida, Gurugram, and other prime locations in India.ATS is
+                                    recognized for creating some of the most premium residential and commercial
+                                    properties,
+                                    particularly in North India, which are designed to meet the highest standards of
+                                    quality, comfort, and innovation. The developer’s approach is rooted in a deep
+                                    understanding of customer needs, ensuring that every project reflects both aesthetic
+                                    appeal and functional design. Whether it's a luxury residential complex or a
+                                    commercial space, ATS incorporates modern architecture, state-of-the-art amenities,
+                                    and meticulously planned layouts that enhance the overall living and working
+                                    experience.
+                                    Timely delivery and attention to detail are at the core of ATS’s philosophy.
+                                    The developer is committed to ensuring that each project is completed on schedule
+                                    without compromising on quality. This reliability has made ATS a trusted name in the
+                                    industry. The company’s projects stand as a testament to its dedication to
+                                    excellence
+                                    and customer satisfaction, with each property carefully crafted to provide the
+                                    utmost value. Quality is never an afterthought for ATS; it is integral to every
+                                    phase of the project, from conceptualization to execution. This unwavering
+                                    commitment to quality, coupled with transparency in dealings and sincerity in
+                                    delivering promises, makes ATS a preferred choice for buyers and investors alike.
+                                    Their ongoing success is a result of their deep-rooted values and focus on
+                                    creating spaces that enrich the lives of their residents and users.</p>
+                            </div>
+                            <div class="buyer_seller_button" style="text-align: center;">
+                                <a class="btn " data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire
+                                    now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Developer section ends-->
+
+        <!-- Estimate section starts-->
+
+        <section id="estimate_section" class="m-3">
+
+            <div class="container">
+
+                <div class="estimate_inner_section card">
+                    <div class="row estimate_inner_row">
+                        <div class="col-lg-6 col-12">
+
+                            <h4 class="text-black">Map View</h4>
+
+                            <div style="border: 2px solid black;" class="mt-3">
+                                <img src="assets/images/property-listing/map1.jpg"
+                                    style="width: 100%;  filter: blur(2px);" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+
+                            <h4 class="text-black">Location Map</h4>
+
+                            <div style="border: 2px solid black;" class="mt-3">
+                                <img src="assets/images/property-listing/map2.jpg"
+                                    style="width: 100%;  filter: blur(2px);" />
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-12" style="margin-top: 50px;">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item p-1" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-SchoolsandColleges" type="button" role="tab"
+                                        aria-controls="pills-home" aria-selected="true">Schools and Colleges</button>
+                                </li>
+                                <li class="nav-item p-1" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-TechParks" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Tech Parks</button>
+                                </li>
+                                <li class="nav-item p-1" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-LifestyleRetails" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Lifestyle & Retails</button>
+                                </li>
+                                <li class="nav-item p-1" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-CompaniesinAerospacePark" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false"> Companies in Aerospace
+                                        Park</button>
+                                </li>
+                                <li class="nav-item p-1" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-Hospitals" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Hospitals</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-SchoolsandColleges" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul>
+                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>Strategically
+                                                    located on Noida Expressway.</li>
+                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>5
+                                                    Minutes from Sector 148 Metro station.</li>
+                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>All
+                                                    Social Infrastructure is ready.</li>
+                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>Strategically
+                                                    located on Noida Expressway.</li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+
+                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>5
+                                                    Minutes from Top-notch educational institutes.</li>
+                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>25
+                                                    Minutes from Sector 18, Mall of India.</li>
+                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>30
+                                                    Minutes from South Delhi via DND</li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-TechParks" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul>
+                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>school
+                                                    & Junior college - 2 mins</li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-LifestyleRetails" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul>
+                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>Mall
+                                                    - 10 mins</li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-CompaniesinAerospacePark" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul>
+                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>BKC
+                                                    - 10 mins</li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-Hospitals" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul>
+                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>Hospital
+                                                    - 10 mins</li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estimate section ends-->
+
+        <!-- Footer starts-->
+
+        <footer class="site_footer">
+
+            <div class="container" style="padding: 30px;">
+                <center>
+                    <span style="text-align: center; color: white; ">
+                        <strong> Project is RERA registered. |
+                            ATS Picturesque Reprieves Phase 1 Rera Number </strong> UPRERAPRJ631| <br /><strong>ATS
+                            Picturesque
+                            Reprieves
+                            Phase 2 Rera Number </strong> UPRERAPRJ2875
+                    </span>
+                </center>
+                <p style="font-size: 12px; text-align: center; color: white;">
+                    Disclaimer : Please be advised that this website is not an official site and serves solely
+                    as an informational portal managed by a RERA authorized real estate agent. It does not
+                    constitute an offer or guarantee of any services. The prices displayed on this website
+                    are subject to change without prior notice, and the availability of properties cannot
+                    be guaranteed. The images showcased on this website are for representational purposes
+                    only and may not accurately reflect the actual properties. We may share your data with
+                    Real Estate Regulatory Authority (RERA) registered Developers for further processing as
+                    necessary. Additionally, we may send updates and information to the mobile number or email
+                    address registered with us. All rights reserved. The content, design, and information on
+                    this website are protected by copyright and other intellectual property rights. Any
+                    unauthorized use or reproduction of the content may violate applicable laws. For
+                    accurate and up-to-date information regarding services, pricing, availability, and
+                    any other details, it is recommended to contact us directly through the provided
+                    contact information on this website. Thank you for visiting our website.
+                </p>
+
+                <p style="text-align: center; color: white; font-size: 12px;">All Rights Reserved. © 2024 : <a
+                        href="">Digital Rubix - A Performance Driven Digital Marketing Company <br />
+                        Disclaimer</a> | <a href="">Privacy Policy</a> | <a href="">Terms & Conditions </a></p>
+
+            </div>
+        </footer>
+
+        <!-- Footer ends-->
+
+    </div>
+
+    <script src="assets/jquery/jquery-min-3.6.0.js"></script>
+
+    <script src="assets/jquery/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/jquery/slick.min.js"></script>
+
+    <script src="assets/jquery/all.min.js"></script>
+
+    <script src="assets/jquery/custom.js"></script>
+
+    <script src="assets/jquery/color_scheme.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#mobile");
+        const iti = window.intlTelInput(input, {
+            initialCountry: "in", // Default to India
+            separateDialCode: true, // Shows country code separately
+            preferredCountries: ["in", "us", "gb", "ca"], // Commonly used countries
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // Required for validation
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let elements = document.querySelectorAll(".pop-up");
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add("show-pop"); // Apply the show-pop class
+                }, index * 300); // Staggered effect
+            });
+        });
+    </script>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+
+            var fullPhoneNumber = iti.getNumber();
+
+            // Get the country code separately
+            var countryData = iti.getSelectedCountryData();
+            var countryCode = "+" + countryData.dialCode;
+
+            // Get the phone number without the country code
+            var phoneNumber = fullPhoneNumber.replace(countryCode, "").trim();
+
+            var formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                country_code: countryCode,  // Country code separately
+                phone: phoneNumber  // Number separately
+            };
+
+            fetch("https://script.google.com/macros/s/AKfycbyqeNjZXK-5fVgxpRszeOy_YWsqEdfoAETnzmizeF0zmsY0yQR48fTOqefukYQ7GfrU/exec", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+                mode: 'no-cors'  // Important for Google Apps Script
+            })
+                .then(() => {
+                    alert("Your message has been submitted successfully!");
+                    document.getElementById("contact-form").reset();
+                    var modal = bootstrap.Modal.getInstance(document.getElementById('exampleModalToggle'));
+                    modal.hide();
+                })
+                .catch(error => alert("Error: " + error));
+        }
+    </script>
+
+
+</body>
+
+
+<!-- Mirrored from up2client.com/envato/relock/homepage_1.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Feb 2025 06:01:28 GMT -->
+
+</html>
