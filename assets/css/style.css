@@ -50,7 +50,101 @@ a (active):     #f5811d
 
 -------------------------------------------------------------------*/
 
+.form_banner {
+    position: relative;
+    top: 120px;
+}
+
+.cone_center{
+    margin-top: 100px;
+}
+
+.cone_center .container .row_1{
+    padding: 20px 0px;    
+}
+
+
+
+.bg_img_about {
+    background-image: url(../images/about-images/bg-about.jpg);
+    background-size: 100% auto; /* Full width, auto height */
+    background-position: top; /* Positions image at the top */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+}
+
+
+.cone_center .container .row_1 {
+    padding: 60px 0px;
+}
+.cone_center .container .row_1  h2{
+    font-size: 38px;
+}
+
+.buyer_seller_top_inner_section .left_column img {
+    border-radius: 50px 0px 50px 0px;
+}
+
+.pro-img{
+    height: auto;
+}
+
+@media (min-width: 576px) {
+
+    .pro-img{
+        height: 750px;
+    }
+    
+
+    .buyer_seller_top_inner_section .left_column img {
+        border-radius: 0px 100px 0px 100px;
+    }
+
+
+    .cone_center .container .row_1 {
+        padding: 60px 0px;
+    }
+
+    .form_banner {
+        position: relative;
+        top: 0px;
+    }
+
+    .cone_center{
+        margin-top:0px;
+    }
+    
+
+    .bg_img_about {
+        background-image: url(../images/about-images/bg-about.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 60px 0px;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
+
+
 /************************ Default css ***************************/
+
+
+
+
 
 html {
 	scroll-behavior: smooth;
@@ -163,15 +257,15 @@ li {
 /********************************* Button ***********************/
 
 .btn {
+    text-transform: uppercase;
     font-family: proxima-nova-bold;
     font-size: 16px;
     font-weight: normal;
     color: #ffffff;
     background-color: #f5811d;
     border: 3px solid #f5811d;
-    border-radius: 10px;
-    text-transform: capitalize;
-    padding: 10px 20px;
+    border-radius: 0px;
+    padding: 7px 15px;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -972,13 +1066,6 @@ li {
 
 /************* About Section ****************/
 
-.bg_img_about {
-    background-image: url(../images/about-images/bg-about.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 60px 0px;
-}
 
 .about_house_info {
     border: 2px solid #ffffff;
@@ -1023,16 +1110,18 @@ li {
 }
 
 .property .property-price {
+    font-size: smaller;
+    text-transform: uppercase;
     width: 100px;
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     color: #ffffff;
-    background-color: #000000;
-    border-radius: 15px;
+    background-color: #f5811d;
+    border-radius: 0px;
     position: absolute;
-    top: 20px;
-    right: 35px;
+    top: 0px;
+    right: 0px;
     z-index: 1;
     transition: all 0.3s ease;
     -webkit-transition: all .3s ease;
@@ -1043,20 +1132,10 @@ li {
 
 .property .property-image {
     overflow: hidden;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -ms-transition: all .3s ease;
 }
 
 .property .property-image img {
     width: 100% !important;
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
 }
 
 .property .property-title {
@@ -1146,9 +1225,7 @@ li {
     -ms-box-shadow: 0px 15px 40px 0px rgb(3 3 3 / 25%) !important;
 }
 
-.buyer_seller_top_inner_section .left_column img {
-    border-radius: 0px 100px 0px 100px;
-}
+
 
 .buyer_seller_title h5 {
     color: #f5811d;
@@ -1219,7 +1296,7 @@ li {
 }
 
 .real_estate_categories {
-    padding-top: 30px;
+    padding-top: 00px;
 }
 
 .category_items {
@@ -1250,7 +1327,7 @@ li {
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
-    filter: blur(1px);
+    /* filter: blur(1px); */
 }
 
 .p_category_image:after {
@@ -1262,9 +1339,9 @@ li {
     height: 100%;
     border-radius: 15px;
     transition: all .7s ease;
-    background-image: -webkit-linear-gradient(bottom, #000000 0%, rgba(0,0,0,0) 100%);
-    background-image: -o-linear-gradient(bottom, #000000 0%, rgba(0,0,0,0) 100%);
-    background-image: linear-gradient(0deg, #000000 0%, rgba(0,0,0,0) 100%);
+    background-image: -webkit-linear-gradient(bottom, #0000005e 0%, rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(bottom, #00000060 0%, rgba(0,0,0,0) 100%);
+    background-image: linear-gradient(0deg, #00000036 0%, rgba(0,0,0,0) 100%);
     -webkit-transition: all .7s ease;
     -moz-transition: all .7s ease;
     -o-transition: all .7s ease;
@@ -1547,12 +1624,12 @@ li {
     position: relative;
     z-index: 1;
     border-radius: 15px;
-    box-shadow: 0px 15px 40px 0px rgba(1,1,1,0.05);
+    /* box-shadow: 0px 15px 40px 0px rgba(1,1,1,0.05); */
     padding: 30px;
-    -moz-box-shadow: 0px 15px 40px 0px rgb(1 1 1 / 5%);
+    /* -moz-box-shadow: 0px 15px 40px 0px rgb(1 1 1 / 5%);
     -webkit-box-shadow: 0px 15px 40px 0px rgb(1 1 1 / 5%);
     -o-box-shadow: 0px 15px 40px 0px rgb(1 1 1 / 5%);
-    -ms-box-shadow: 0px 15px 40px 0px rgb(1 1 1 / 5%);
+    -ms-box-shadow: 0px 15px 40px 0px rgb(1 1 1 / 5%); */
 }
 
 .estimate_inner_section:before {

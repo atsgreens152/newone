@@ -115,7 +115,7 @@
         width: 100%;
     }
     .buyer_seller_top_inner_section .right_column {
-        padding-left: 30px;
+        padding: 20px;
     }
     .buyer_seller_top_inner_section .right_column .buyer_seller_para p {
         width: 100%;
@@ -296,8 +296,9 @@
         padding: 60px 0px;
     }
     .about_house_info {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+        padding:10px !important;
+        /* padding-left: 20px !important;
+        padding-right: 20px !important; */
     }
     .title_about h5 {
         padding-top: 30px;
@@ -468,7 +469,9 @@
         margin-top: 10px;
     }
     .theme_heading h2 {
-        text-align: center;
+        text-align: start;
+        padding: 0px 0px 20px 0px;
+
     }
     .theme_description p {
         text-align: center;
@@ -519,7 +522,7 @@
         margin-bottom: 20px;
     }
     .buyer_seller_top_inner_section .right_column {
-        padding-left: 40px;
+        padding: 20px;
     }
     .buyer_seller_bottom_inner_section .left_column {
         padding-left: 40px;
@@ -719,7 +722,7 @@
         margin-top: 0;
     }
     .p_category_image {
-        height: 175px;
+        height: 100px;
     }
     .real_estate_categories .category_items_link .category_title {
         left: 10px;
@@ -802,8 +805,8 @@
         font-size: 16px;
     }
     .property .property-price {
-        top: 15px;
-        right: 25px;
+        top: 0px;
+        right: 0px;
     }
     .property .property-title {
         font-size: 26px;
@@ -825,7 +828,7 @@
         height: 290px;
     }
     .buyer_seller_top_inner_section .right_column {
-        padding-left: 30px;
+        padding: 20px;
     }
     .buyer_seller_bottom_inner_section .left_column {
         padding-left: 30px;

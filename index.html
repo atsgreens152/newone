@@ -80,11 +80,31 @@
         .pop-up:nth-child(2) {
             animation-delay: 1s;
         }
+
+
+        .mt-100 {
+            margin-top: 50px !important;
+        }
+    </style>
+
+    <style>
+        .property.card {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            /* Default shadow */
+        }
+
+        .property.card:hover {
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+            /* Bigger shadow on hover */
+            transform: translateY(-5px);
+            /* Slight lift effect */
+        }
     </style>
 
 </head>
 
-<body class="">
+<body class="" style="background-color: rgb(247, 247, 247);">
 
     <div id="wrap">
 
@@ -215,15 +235,17 @@
 
         <!-- About section start -->
 
+
+
         <section id="home_section">
 
             <div class="bg_img_about">
 
-                <div class="container">
+                <div class="container form_banner">
 
                     <div class="col-md-5 col-12 about_house_info" style="text-align: center; background-color: white;">
                         <div class="">
-                            <h4 style="color: #f5811d; margin-top: 40px;">LIMITED INVENTRIES</h4>
+                            <h4 style="color: #f5811d; margin-top: 40px;">LIMITED INVENTRIES LEFT</h4>
                         </div>
                         <div class="heading_about">
                             <h3 style="color: black;">ATS Picturesque Reprieves</h3>
@@ -234,10 +256,10 @@
                                 5 KVA Power Backup, 2 Covered Car Parking</p>
                         </div>
                         <br>
-                        <div class="pop-up p-1 text-black shadow mt-2" style="background-color: #ffffff;">
-                            <h4 style=""><img src="./assets/images/logo/hdfc.png" style="width: 70px;"><strong
-                                    class="text-black">Approved
-                                    By HDFC Bank</strong></h4>
+                        <div class="pop-up p-3 text-black shadow mt-2" style="background-color: #ffffff;">
+                            <h5><strong class="text-black">Approved
+                                    By</strong><img style="width: 200px; padding: 5px;"
+                                    src="./assets/images/logo/hdfc.svg" style="width: 70px;"></h5>
                         </div><br>
                         <div class="pop-up p-3 text-white" style="background-color: #f5811d;">
                             <p style="color: white;">Premium Craftsmanship of Internal <br />Specifications</p>
@@ -260,6 +282,7 @@
                                 now</a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -268,37 +291,43 @@
 
         <!-- Property listing section starts-->
 
-        <section style="margin-top: 40px;" id="about_section">
-            <div class="" style="text-align: justify; padding: 20px; ">
-                <h2 style="color: #f5811d;">ATS Picturesque Reprieves</h2>
-                <h2> A Serene Paradise in Sector 152, Noida</h2>
-                <br />
-                <p>Nestled in the vibrant heart of Sector 152, Noida, ATS Picturesque Reprieves is a masterpiece
-                    of luxury and tranquility. Designed to offer an exquisite lifestyle, this residential haven
-                    blends Spanish architectural elegance with modern sophistication.</p>
+        <section class="container-fluid cone_center" style="background-color: white;" id="about_section">
+            <div class="container">
+                <div class="row_1">
+                    <h2 style="color: #f5811d;">ATS Picturesque Reprieves</h2>
+                    <h4 style="color: #154A48;"> A Serene Paradise in Sector 152, Noida</h4>
+                    <br />
 
-                <br />
+                    <div style="text-align: justify;">
 
-                <p>Spread across lush #f5811d landscapes, the project features spacious 3 & 4 BHK apartments
-                    with thoughtfully designed interiors, ensuring comfort and opulence at every step. The
-                    residences boast expansive balconies, panoramic views, and premium finishes that create
-                    an ambiance of refined living.</p>
+                        <p>Nestled in the vibrant heart of Sector 152, Noida, ATS Picturesque Reprieves is a masterpiece
+                            of luxury and tranquility. Designed to offer an exquisite lifestyle, this residential haven
+                            blends Spanish architectural elegance with modern sophistication.</p>
 
-                <br />
+                        <br />
 
-                <p>With world-class amenities, including a grand clubhouse, swimming pools, landscaped
-                    gardens, sports facilities, and dedicated leisure spaces, ATS Picturesque Reprieves
-                    caters to every aspect of a fulfilling life. Strategically located, it enjoys
-                    excellent connectivity to major expressways, educational institutions, healthcare
-                    centers, and entertainment hubs, making it a perfect blend of convenience and
-                    serenity.</p>
+                        <p>Spread across lush #f5811d landscapes, the project features spacious 3 & 4 BHK apartments
+                            with thoughtfully designed interiors, ensuring comfort and opulence at every step. The
+                            residences boast expansive balconies, panoramic views, and premium finishes that create
+                            an ambiance of refined living.</p>
 
-                <br />
+                        <br />
 
-                <p>Experience a lifestyle where luxury meets nature at ATS Picturesque Reprieves
-                    – your dream home in Noida’s most sought-after address.</p>
+                        <p>With world-class amenities, including a grand clubhouse, swimming pools, landscaped
+                            gardens, sports facilities, and dedicated leisure spaces, ATS Picturesque Reprieves
+                            caters to every aspect of a fulfilling life. Strategically located, it enjoys
+                            excellent connectivity to major expressways, educational institutions, healthcare
+                            centers, and entertainment hubs, making it a perfect blend of convenience and
+                            serenity.</p>
 
-                <br />
+                        <br />
+
+                        <p>Experience a lifestyle where luxury meets nature at ATS Picturesque Reprieves
+                            – your dream home in Noida’s most sought-after address.</p>
+
+                        <br />
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -306,32 +335,34 @@
 
         <!-- Price section starts-->
 
-        <section id="price_section" class="mt-100">
+        <section id="price_section" class="mt-100" style="background-color: white; padding:60px 0px;">
 
             <div class="container">
 
                 <div class="row">
-                    <div class="col-lg-9 col-md-8 col-12">
+                    <div class="col-12">
                         <div class="theme_heading">
-                            <h2>Price List</h2>
+                            <h2 style="color: #154A48; font-size: 40px;">Price List</h2>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-12 theme_button">
-
-                        <a class="btn " data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
                     </div>
                 </div>
 
 
+
+                <style>
+                    .property-title {
+                        font-size: 20px;
+                    }
+                </style>
 
 
                 <div class="row pt-3">
 
                     <div class="col-12 col-md my-2">
                         <div class="property card p-3">
-                            <div class="property-image"><img src="assets/images/property-listing/property-1.webp"
-                                    alt="property_image">
-                                <p class="property-price" style="width: 150px;">price of req.</p>
+                            <div class=""><img style="margin-top: 30px; width: 100%;"
+                                    src="assets/images/property-listing/property-1.webp" alt="property_image">
+                                <p class="property-price" style="width: 150px;">price of request</p>
                             </div>
                             <h3 class="property-title">3 BHK</h3>
                             <div class="facilities">
@@ -356,9 +387,9 @@
                     <div class="col-12 col-md my-2">
 
                         <div class="property card p-3">
-                            <div class="property-image"><img src="assets/images/property-listing/property-1.webp"
-                                    alt="property_image">
-                                <p class="property-price" style="width: 150px;">price of req.</p>
+                            <div class=""><img style="margin-top: 30px; width: 100%;"
+                                    src="assets/images/property-listing/property-1.webp" alt="property_image">
+                                <p class="property-price" style="width: 150px;">price of request</p>
                             </div>
                             <h3 class="property-title">3 BHK+S.R</h3>
                             <div class="facilities">
@@ -382,17 +413,64 @@
                     </div>
 
                     <div class="col-12 col-md my-2">
-
                         <div class="property card p-3">
-                            <div class="property-image"><img src="assets/images/property-listing/property-1.webp"
-                                    alt="property_image">
-                                <p class="property-price" style="width: 150px;">price of req.</p>
+                            <div class="">
+                                <img style="margin-top: 30px; width: 100%;"
+                                    src="assets/images/property-listing/property-1.webp" alt="property_image">
+                                <p class="property-price" style="width: 150px;">Price on Request</p>
                             </div>
                             <h3 class="property-title">4 BHK+S.R</h3>
                             <div class="facilities">
                                 <p class="area-facility value">Area: <span>3200 Sq. ft.</span></p>
                             </div>
                             <br>
+                            <a class="btn" style="
+                              bottom: 0; 
+                              left: 0; 
+                              width: 100%; 
+                              padding: 10px; 
+                              background: #f5811d; 
+                              color: white; 
+                              border: none; 
+                              cursor: pointer; 
+                              font-size: 20px; 
+                              z-index: 1;" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Enquire
+                                now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Price section ends-->
+
+
+        <!-- flor plan section starts-->
+
+        <section id="price_section" class="mt-100" style="background-color: white; padding: 60px 0px;">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="theme_heading">
+                            <h2 style="color: #154A48; font-size: 40px;">Floor Plan</h2>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row pt-3">
+
+                    <div class="col-12 col-md my-2">
+                        <div class="property card p-3">
+                            <div class=""><img style="margin-top: 30px; width: 100%; filter: blur(2px);"
+                                    src="assets/images/agents/agent-1.png" alt="property_image"> </div>
+                            <br />
+
                             <a class="btn " style="
                           bottom: 0; 
                           left: 0; 
@@ -406,46 +484,19 @@
                           z-index: 1;" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Price section ends-->
-
-
-        <!-- flor plan section starts-->
-
-        <section id="price_section" class="mt-100">
-
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-lg-9 col-md-8 col-12">
-                        <div class="theme_heading">
-                            <h2>Floor Plan</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-12 theme_button">
-
-                        <a class="btn " data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
-                    </div>
-                </div>
-
-                <div class="property row mt-3">
-
-                    <div class="col-12 col-md-4 my-2">
+                    <div class="col-12 col-md my-2">
 
                         <div class="property card p-3">
-                            <div class="property-image">
-                                <img src="assets/images/agents/agent-1.png" style="width: 100%; height: 300px; 
-                                        box-shadow: 25px 25px 25px 25px rgba(1, 1, 1, 1); 
-                                        filter: blur(2px);" alt="property_image">
+                            <div class=""><img style="margin-top: 30px; width: 100%; filter: blur(2px);"
+                                    src="assets/images/agents/agent-2.png" alt="property_image">
                             </div>
-
+                            <br>
 
                             <a class="btn " style="
+                          bottom: 0; 
+                          left: 0; 
                           width: 100%; 
-                          border-radius: 0px;
                           padding: 10px; 
                           background: #f5811d; 
                           color: white; 
@@ -453,57 +504,29 @@
                           cursor: pointer; 
                           font-size: 20px; 
                           z-index: 1;" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
-                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
-                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-
-                            </div>
 
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-4 my-2">
+                    <div class="col-12 col-md my-2">
                         <div class="property card p-3">
-                            <div class="property-image">
-                                <img src="assets/images/agents/agent-2.png" style="width: 100%;
-                            height: 300px;
-                            box-shadow: 25px 25px 25px 25px rgba(1, 1, 1, 1); 
-                            filter: blur(2px);" alt="property_image">
+                            <div class="">
+                                <img style="margin-top: 30px; width: 100%; filter: blur(2px);"
+                                    src="assets/images/agents/agent-3.png" alt="property_image">
                             </div>
-
+                            <br>
                             <a class="btn" style="
-                                width: 100%; 
-                                border-radius: 0px;
-                                text-align: center;
-                                padding: 10px; 
-                                background: #f5811d; 
-                                color: white; 
-                                border: none; 
-                                cursor: pointer; 
-                                font-size: 20px; 
-                                z-index: 1;" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire
+                              bottom: 0; 
+                              left: 0; 
+                              width: 100%; 
+                              padding: 10px; 
+                              background: #f5811d; 
+                              color: white; 
+                              border: none; 
+                              cursor: pointer; 
+                              font-size: 20px; 
+                              z-index: 1;" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Enquire
                                 now</a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-12 col-md-4 my-2">
-                        <div class="property card p-3">
-                            <div class="property-image">
-                                <img src="assets/images/agents/agent-3.png" style="width: 100%;
-                            height: 300px;
-                            box-shadow: 25px 25px 25px 25px rgba(1, 1, 1, 1); 
-                            filter: blur(2px);" alt="property_image">
-                            </div>
-                            <a class="btn " style="
-                          width: 100%; 
-                          border-radius: 0px;
-                          padding: 10px; 
-                          background: #f5811d; 
-                          color: white; 
-                          border: none; 
-                          cursor: pointer; 
-                          font-size: 20px; 
-                          z-index: 1;" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
                         </div>
                     </div>
 
@@ -515,27 +538,25 @@
 
         <!-- master plan section starts-->
 
-        <section id="price_section" class="mt-100">
+
+
+        <section id="price_section" class="mt-100 bg-white" style="background-color: white; padding: 60px 0px;">
 
             <div class="container">
 
-                <div class="row">
-                    <div class="col-lg-9 col-md-8 col-12">
+                <div class="row ">
+                    <div class="col-12">
                         <div class="theme_heading">
-                            <h2>Master Plan</h2>
+                            <h2 style="color: #154A48; font-size: 40px;">Master Plan</h2>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-12 theme_button">
-
-                        <a class="btn " data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
                     </div>
                 </div>
 
-                <div class=" pt-80">
+                <div class="pt-3">
 
                     <div class="card col-12 shadow">
-                        <div class="property-image"><img style="width: 100%; height: 600px; filter: blur(1px);"
-                                src="assets/images/agents/agent-4.png" alt="property_image">
+                        <div class="property-image"><img style="width: 100%; filter: blur(1px);"
+                                src="assets/images/agents/map.png" alt="property_image">
                         </div>
                     </div>
 
@@ -547,18 +568,15 @@
 
         <!-- Amenities section starts-->
 
-        <section id="Amenities_section" class="mt-100">
+        <section id="Amenities_section" class="mt-100" style="background-color: white; padding: 40px 0px;">
 
             <div class="container">
 
                 <div class="row">
-                    <div class="col-lg-9 col-md-8 col-12">
+                    <div class="col-12">
                         <div class="theme_heading">
-                            <h2>Amenities</h2>
+                            <h2 style="color: #154A48; font-size: 40px;">Amenities</h2>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-12 theme_button">
-                        <a class="btn " data-bs-toggle="modal" href="#exampleModalToggle" role="button">Equire now</a>
                     </div>
                 </div>
 
@@ -616,7 +634,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-6 category_column">
+                    <div class="col-md-3 col-6 category_column pt-3">
                         <div class="real_estate_categories">
                             <div class="category_items">
                                 <a class="category_items_link" href="javascript:void(0);">
@@ -629,7 +647,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-6 category_column">
+                    <div class="col-md-3 col-6 category_column pt-3">
                         <div class="real_estate_categories">
                             <div class="category_items">
                                 <a class="category_items_link" href="javascript:void(0);">
@@ -642,7 +660,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-6 category_column">
+                    <div class="col-md-3 col-6 category_column pt-3">
                         <div class="real_estate_categories">
                             <div class="category_items">
                                 <a class="category_items_link" href="javascript:void(0);">
@@ -655,7 +673,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 col-6 category_column">
+                    <div class="col-md-3 col-6 category_column pt-3">
                         <div class="real_estate_categories">
                             <div class="category_items">
                                 <a class="category_items_link" href="javascript:void(0);">
@@ -667,6 +685,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -679,41 +698,73 @@
 
 
 
+
+
         <!-- Gallery section starts-->
 
-        <section id="Gallery_section" class="">
 
-            <div class="bg_img_testimonial">
+        <section id="Amenities_section" class="mt-100" style="background-color: white; padding: 40px 0px;">
 
-                <div class="container">
+            <div class="container">
 
-                    <div class="theme_heading">
-                        <h2>ATS Gallery</h2>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="theme_heading">
+                            <h2 style="color: #154A48; font-size: 40px;">ATS Gallery</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row category_inner_section">
+
+                    <div class="col-md-3 col-6 category_column">
+                        <div class="real_estate_categories">
+                            <div class="category_items">
+                                <a class="category_items_link" href="javascript:void(0);">
+                                    <div class="p_category_image"
+                                        style="background-image: url('assets/images/gallery/1.jpg');">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 category_column">
+                        <div class="real_estate_categories">
+                            <div class="category_items">
+                                <a class="category_items_link" href="javascript:void(0);">
+                                    <div class="p_category_image"
+                                        style="background-image: url('assets/images/gallery/2.jpg');">
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 category_column">
+                        <div class="real_estate_categories">
+                            <div class="category_items">
+                                <a class="category_items_link" href="javascript:void(0);">
+                                    <div class="p_category_image"
+                                        style="background-image: url('assets/images/gallery/3.jpg');">
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 category_column">
+                        <div class="real_estate_categories">
+                            <div class="category_items">
+                                <a class="category_items_link" href="javascript:void(0);">
+                                    <div class="p_category_image"
+                                        style="background-image: url('assets/images/gallery/4.jpg');">
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="testimonial_inner_section">
-                        <div class="client_testimonials">
-                            <div class="p_category_image" style="background-image: url('assets/images/gallery/1.jpg');">
-                            </div>
-                        </div>
-
-                        <div class="client_testimonials">
-                            <div class="p_category_image" style="background-image: url('assets/images/gallery/2.jpg');">
-                            </div>
-                        </div>
-
-                        <div class="client_testimonials">
-                            <div class="p_category_image" style="background-image: url('assets/images/gallery/3.jpg');">
-                            </div>
-                        </div>
-
-                        <div class="client_testimonials">
-                            <div class="p_category_image" style="background-image: url('assets/images/gallery/4.jpg');">
-                            </div>
-                        </div>
-
-
-                    </div>
 
                 </div>
             </div>
@@ -725,23 +776,23 @@
 
         <!-- Developer section starts-->
 
-        <section id="" class="">
+        <section id="" class="mt-100" style="background-color: white; padding: 40px 0px;">
 
             <div class="bg_img_buyer_seller">
 
                 <div class="container">
 
                     <div class="row buyer_seller_top_inner_section" style="justify-content: center;">
-                        <div class="col-8 left_column ">
-                            <center> <img class="img_shadow shadow" src="assets/images/house-images/house-1.png"
-                                    style="width: 100%; height: auto;" alt="house-image">
+                        <div class="col-12 col-md-10 left_column ">
+                            <center> <img class="img_shadow shadow pro-img" src="assets/images/house-images/house-1.png"
+                                    style="width: 100%;" alt="house-image">
                             </center>
                         </div>
 
-                        <div class="col-12 right_column mt-5">
+                        <div class="col-12 right_column mt-2">
 
                             <div class="buyer_seller_heading" style="text-align: center;">
-                                <h2 class="my-3">about Developer</h2>
+                                <h2 class="my-3" style="color: #154A48; font-size: 40px;">about Developer</h2>
                             </div>
                             <div style="text-align: justify ;">
                                 <p>TS Infrastructure Ltd. – Crafting Excellence in Noida's Skyline
@@ -788,15 +839,15 @@
 
         <!-- Estimate section starts-->
 
-        <section id="estimate_section" class="m-3">
+        <section id="estimate_section" class="bg-white mt-100">
 
             <div class="container">
 
-                <div class="estimate_inner_section card">
+                <div class="estimate_inner_section ">
                     <div class="row estimate_inner_row">
                         <div class="col-lg-6 col-12">
 
-                            <h4 class="text-black">Map View</h4>
+                            <h4 class="text-black" style="color: #154A48;">Map View</h4>
 
                             <div style="border: 2px solid black;" class="mt-3">
                                 <img src="assets/images/property-listing/map1.jpg"
@@ -844,116 +895,153 @@
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-SchoolsandColleges" role="tabpanel"
                                     aria-labelledby="pills-home-tab">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <ul>
-                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
-                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>Strategically
-                                                    located on Noida Expressway.</li>
-                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
-                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>5
-                                                    Minutes from Sector 148 Metro station.</li>
-                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
-                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>All
-                                                    Social Infrastructure is ready.</li>
-                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
-                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>Strategically
-                                                    located on Noida Expressway.</li>
-                                            </ul>
+                                    <div class="row ">
+                                        <div class="col-12 col-md-6">
+
+                                            <div class="row my-2 d-flex">
+                                                <div class="col-1">
+                                                    <i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px;     "></i>
+                                                </div>
+                                                <div class="col-11">
+                                                    Strategically
+                                                    located on Noida Expressway.
+                                                </div>
+                                            </div>
+                                            <div class="row my-2 d-flex">
+                                                <div class="col-1">
+                                                    <i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; "></i>
+                                                </div>
+                                                <div class="col-11">
+                                                    5 Minutes from Sector 148 Metro station.
+                                                </div>
+                                            </div>
+                                            <div class="row my-2 d-flex">
+                                                <div class="col-1">
+                                                    <i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; "></i>
+                                                </div>
+                                                <div class="col-11">
+                                                    All
+                                                    Social Infrastructure is ready.
+                                                </div>
+                                            </div>
+                                            <div class="row my-2 d-flex">
+                                                <div class="col-1">
+                                                    <i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; "></i>
+                                                </div>
+                                                <div class="col-11">
+                                                    Strategically
+                                                    located on Noida Expressway.
+                                                </div>
+                                            </div>
+
+
 
                                         </div>
-                                        <div class="col-6">
-                                            <ul>
+                                        <div class="col-12 col-md-6 ">
 
-                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
-                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>5
-                                                    Minutes from Top-notch educational institutes.</li>
-                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
-                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>25
-                                                    Minutes from Sector 18, Mall of India.</li>
-                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
-                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>30
-                                                    Minutes from South Delhi via DND</li>
+                                            <div class="row my-2 d-flex">
+                                                <div class="col-1">
+                                                    <i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; "></i>
+                                                </div>
+                                                <div class="col-11">
+                                                    5 Minutes from Top-notch educational institutes.
+                                                </div>
+                                            </div>
+                                            <div class="row my-2 d-flex">
+                                                <div class="col-1">
+                                                    <i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; "></i>
+                                                </div>
+                                                <div class="col-11">
+                                                    25 Minutes from Sector 18, Mall of India.
+                                                </div>
+                                            </div>
+                                            <div class="row my-2 d-flex">
+                                                <div class="col-1">
+                                                    <i class="fa-solid fa-location-dot"
+                                                        style="color: #f5811d; font-size: 20px; "></i>
+                                                </div>
+                                                <div class="col-11">
+                                                    30 Minutes from South Delhi via DND
+                                                </div>
+                                            </div>
 
-                                            </ul>
 
                                         </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="pills-TechParks" role="tabpanel"
                                     aria-labelledby="pills-profile-tab">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <ul>
-                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
-                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>school
-                                                    & Junior college - 2 mins</li>
-                                            </ul>
 
+                                    <div class="col-12 col-md-6 my-2 d-flex">
+                                        <div class="col-1">
+                                            <i class="fa-solid fa-location-dot"
+                                                style="color: #f5811d; font-size: 20px; "></i>
                                         </div>
-                                        <div class="col-6">
-                                            <ul>
-
-                                            </ul>
-
+                                        <div class="col-11">
+                                            school
+                                            & Junior college - 2 mins
                                         </div>
                                     </div>
+
+
+
                                 </div>
                                 <div class="tab-pane fade" id="pills-LifestyleRetails" role="tabpanel"
                                     aria-labelledby="pills-contact-tab">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <ul>
-                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
-                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>Mall
-                                                    - 10 mins</li>
-                                            </ul>
 
+                                    <div class="col-12 col-md-6 my-2 d-flex">
+                                        <div class="col-1">
+                                            <i class="fa-solid fa-location-dot"
+                                                style="color: #f5811d; font-size: 20px; "></i>
                                         </div>
-                                        <div class="col-6">
-                                            <ul>
-
-                                            </ul>
-
+                                        <div class="col-11">
+                                            Mall
+                                            - 10 mins
                                         </div>
                                     </div>
+
+
+
                                 </div>
                                 <div class="tab-pane fade" id="pills-CompaniesinAerospacePark" role="tabpanel"
                                     aria-labelledby="pills-profile-tab">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <ul>
-                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
-                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>BKC
-                                                    - 10 mins</li>
-                                            </ul>
 
+                                    <div class="col-12 col-md-6 my-2 d-flex">
+                                        <div class="col-1">
+                                            <i class="fa-solid fa-location-dot"
+                                                style="color: #f5811d; font-size: 20px; "></i>
                                         </div>
-                                        <div class="col-6">
-                                            <ul>
-                                            </ul>
-
+                                        <div class="col-11">
+                                            BKC
+                                            - 10 mins
                                         </div>
                                     </div>
+
+
+
+
                                 </div>
                                 <div class="tab-pane fade" id="pills-Hospitals" role="tabpanel"
                                     aria-labelledby="pills-contact-tab">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <ul>
-                                                <li style="padding: 10px;"><i class="fa-solid fa-location-dot"
-                                                        style="color: #f5811d; font-size: 20px; padding-left: 5px; padding-right: 5px;"></i>Hospital
-                                                    - 10 mins</li>
-                                            </ul>
 
+                                    <div class="col-12 col-md-6 my-2 d-flex">
+                                        <div class="col-1">
+                                            <i class="fa-solid fa-location-dot"
+                                                style="color: #f5811d; font-size: 20px;"></i>
                                         </div>
-                                        <div class="col-6">
-                                            <ul>
-
-                                            </ul>
-
+                                        <div class="col-11">
+                                            Hospital
+                                            - 10 mins
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
                         </div>
@@ -1063,7 +1151,7 @@
                 phone: phoneNumber  // Number separately
             };
 
-            fetch("https://script.google.com/macros/s/AKfycbyqeNjZXK-5fVgxpRszeOy_YWsqEdfoAETnzmizeF0zmsY0yQR48fTOqefukYQ7GfrU/exec", {
+            fetch("https://script.google.com/macros/s/AKfycbyJEjCJXt9odfSKqc97IO8R2kM3hBt1efE-PV0H2cjgFIaUKy7G6sNQx7kY3YPQPiNY/exec", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
